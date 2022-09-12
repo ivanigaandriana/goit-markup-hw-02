@@ -18,6 +18,12 @@
 ul{
     list-style: none;}
     /* header */
+
+.site-nav,
+.site-info{
+    display: flex;
+}
+
 .nav-logo{
 font-family: 'Raleway',sans-serif;
 font-weight: 700;
@@ -98,6 +104,11 @@ color:var(--primary-text-color);
 }
 
 /* button */
+.services{
+    display: flex;
+
+}
+
 .services-button{
     font-family: 'Roboto';
 font-weight: 500;
@@ -108,7 +119,7 @@ letter-spacing: 0.03em;
 color:var(--header-logo-color);
 cursor: pointer;
 background-color:var(--secondary-text-color);
-display: flex;
+margin-right: 50px;
 }
 .services-button:hover,
 .services-button:focus{
