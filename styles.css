@@ -8,12 +8,13 @@
     --contacts-text-color: rgba(255, 255, 255, 0.6);
     --header-logo-color: #000000;}
 .page{
-    width: 1230px;
     background-color: #ffffff;
     color: var(--primary-text-color);
     font-family:"Roboto",sans-serif;
 }
-
+.container{
+    width: 1230px;
+}
 .main-nav {
     display: flex;
 }
@@ -47,7 +48,6 @@ section{
 .page-header{
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 1230px;
     margin-left: auto;
 margin-right: auto;
 outline: 1px solid #eeee;
@@ -180,7 +180,7 @@ color: var(--primary-text-color);
 }
 /* Ефективні рішення для вашого бізнесу */
 .herou{
-max-width: 1600px;
+    width: 1600px;
  background-color: var(--background-color);
 text-align: center;
 padding: 200px 0;
@@ -220,7 +220,6 @@ color:var(--background-color-2);
 }
 /* деталі */
 .details{
-    max-width: 1230px;
    flex-wrap: wrap;
    padding-left: 15px;
     padding-right: 15px;
@@ -260,7 +259,6 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
 .work{
-    max-width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -296,7 +294,6 @@ color:var(--title-text-color);
 
 .group{
     background-color:var(--background-color-2) ;
-    max-width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -355,13 +352,10 @@ letter-spacing: 0.03em;
 text-align: center;
 color:var(--primary-text-color);
 margin-bottom: 30px;
-
-
-
 }
 
 .footer-container{
-    max-width: 1600px;
+    
     display: block;
     padding-top: 60px;
     padding-left: 15px;
@@ -471,7 +465,6 @@ color: var(--secondary-text-color);
 
 /* img */
 .progect{
-    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
