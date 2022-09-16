@@ -13,7 +13,9 @@
     font-family:"Roboto",sans-serif;
 }
 .container{
-    width: 1230px;
+width: 1230px;
+margin: 0 auto;
+align-items: center;
 }
 .main-nav {
     display: flex;
@@ -180,7 +182,6 @@ color: var(--primary-text-color);
 }
 /* Ефективні рішення для вашого бізнесу */
 .herou{
-    width: 1600px;
  background-color: var(--background-color);
 text-align: center;
 padding: 200px 0;
@@ -388,7 +389,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 2;
 letter-spacing: 0.03em;
-margin-bottom: 8px;
 margin-top: 20px;
 
 color:var(--secondary-text-color);
@@ -398,6 +398,7 @@ color:var(--secondary-text-color);
     color: var(--accent-color);
 }
 .footer-mailto{
+    margin-top: 9px;
     margin-bottom: 9px;
     font-family: 'Roboto';
 font-weight: 400;
