@@ -228,8 +228,8 @@ padding: 200px 0;
  height: 600px;
  outline: 1px solid black;
  background-image:linear-gradient( to right,
- rgba(0, 8, 0, 0.8),
- rgba(0, 8, 0, 0.8)),
+ rgba(0, 8, 0, 0.5),
+ rgba(0, 8, 0, 0.5)),
  url("./img3/Img\ \(19\)\ \(1\).jpg");
  margin-right: auto;
  margin-left: auto;
@@ -479,6 +479,7 @@ color:var(--title-text-color);
     margin-bottom: 94px;
    
 }
+
 .position-clients:not(last-child){
     margin-right: 0px;
 }
@@ -488,12 +489,18 @@ color:var(--title-text-color);
     height: 92px;
     border:1px solid var(--icon-color);
 }
+.position-clients1:hover,
+.position-clients1:focus{
+    border-color:var(--accent-color) ;
+    fill: var(--accent-color);
+}
 .clients-item{
     
     background-color: var(--secondary-text-color);
     fill: var(--icon-color);
 
 }
+
 .clients2{
     margin-top: 20px;
    block-size: border-box;
