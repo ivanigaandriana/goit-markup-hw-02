@@ -9,6 +9,7 @@
     --header-logo-color: #000000;
     --title-portfolio:#F5F5F5;
     --line-portfolio:#ECECEC;
+    --icon-color:#AFB1B8;
 }
 .page{
     background-color: #ffffff;
@@ -67,14 +68,21 @@ justify-content: center;
     align-items: center;
   
 }
-.site-nav,
-.site-info{
- grid-column-gap: 50px;
+.site-nav{
+    grid-column-gap: 50px; 
 }
+
+
+
 
 .site-info{
     margin-left: auto;
+  
 }
+
+
+
+
 
 
 /* header */
@@ -150,19 +158,57 @@ color:var(--title-text-color);
 .site-nav-cont1:focus{
     color: var(--accent-color);
 }
+.nav-item{
+    display: flex;
+    justify-content: first baseline;
+    
+    
+}
+.nav-item:not(:last-child)
+{
+    margin-right: 50px;
+}
+.icon-mail{
+    width: 16px;
+    height: 12px;
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+   
+
+}
+
 .site-info{
+   
 font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--header-logo-color);
+color: var(--primary-text-color);
 }
+
 .site-info:hover,
 .site-info:focus{
     color: var(--accent-color);
 }
+
+.icon-smartphone{
+   
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+   fill: currentColor;
+}
+.site-tel,
+.site-info
+{
+    display: flex;
+    align-items: center;
+}
 .site-tel{
+  justify-content: baseline;
+   align-items: center;
 font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
@@ -176,8 +222,21 @@ color: var(--primary-text-color);
 /* Ефективні рішення для вашого бізнесу */
 .herou{
  background-color: var(--background-color);
-text-align: center;
+ text-align: center;
 padding: 200px 0;
+ max-width: 1600px;
+ height: 600px;
+ outline: 1px solid black;
+ background-image:linear-gradient( to right,
+ rgba(0, 8, 0, 0.8),
+ rgba(0, 8, 0, 0.8)),
+ url("./img3/Img\ \(19\)\ \(1\).jpg");
+ margin-right: auto;
+ margin-left: auto;
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ background-size: auto;
+
 }
 .herou-title{
     width: 696px;
@@ -229,15 +288,38 @@ color:var(--background-color-2);
 .details-list{
     display: flex;
     justify-content: space-around;
+}
 
-   
+
+.detals-item::before{
+    height: 120px;
+    display: block;
+    outline: 1px solid black;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  
+    background-color: var(--background-color-2);
 }
-.details-item {
-    margin-right: 30px;
+.detals-item:nth-child(1)::before{
+    background-image: url('./img3/Group.png');
 }
+.detals-item:nth-child(2)::before{
+    background-image: url('./img3/clock\ 1.png');
+}
+.detals-item:nth-child(3)::before{
+    background-image: url('./img3/diagram\ 1.png');
+}
+.detals-item:nth-child(4)::before{
+    background-image: url('./img3/astronaut\ 1.png');
+}
+
+
 .detals-item:not(:last-child){
     margin-right: 30px;
 }
+
 
 .attention{
 font-family: 'Roboto',sans-serif;
@@ -350,15 +432,94 @@ line-height: 19px;
 letter-spacing: 0.03em;
 text-align: center;
 color:var(--primary-text-color);
-margin-bottom: 30px;
+
 }
+.position-logo{
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    padding: 16px 30px 30px 32px;
+
+}
+.logo-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    fill: var(--icon-color);
+
+}
+.logo-item:hover,
+.logo-item:focus{
+    fill:var(--secondary-text-color);
+    background-color: var(--accent-color);
+}
+.clients-title{
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+
+color:var(--title-text-color);
+
+}
+.position-clients{
+    display: flex;
+   justify-content:space-around;
+    
+    margin-right: 30px;
+    margin-bottom: 94px;
+   
+}
+.position-clients:not(last-child){
+    margin-right: 0px;
+}
+.position-clients1{
+
+    width: 170px;
+    height: 92px;
+    border:1px solid var(--icon-color);
+}
+.clients-item{
+    
+    background-color: var(--secondary-text-color);
+    fill: var(--icon-color);
+
+}
+.clients2{
+    margin-top: 20px;
+   block-size: border-box;
+   width: 100%;
+  }
+  .clients2:hover,
+  .clients2:focus{
+    fill: currentColor;
+    color: var(--accent-color);
+  }
+
 
 .footer-container{
     
-    display: block;
+  align-items: baseline;
+display: flex;
     padding-top: 60px;
     padding-left: 15px;
 background-color: #2F303A;
+}
+.container-footer{
+    display: flex;
+   width: 1200px;
+}
+.container-log{
+    display: block;
 }
 
 .footer-logo{
@@ -377,9 +538,9 @@ color:var(--accent-color);
 .footer-list2{
     margin-bottom: 20px;
 }
-.footer-item1{
-    
-}
+
+
+
 
 .adress{
     font-family: 'Roboto';
@@ -420,7 +581,53 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel:hover,
 .footer-tel:focus{
+   
     color: var(--accent-color);
+}
+
+.container1{
+    margin-left: 70px;
+    margin-top: 15px;
+
+   
+   
+
+}
+.clients-title1{
+    font-family: 'Roboto';
+font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+   margin-bottom: 20px;
+    
+    color:var(--secondary-text-color);
+    
+
+}
+.pos-logo{
+   
+    display: flex;
+ margin-right: 10px;
+  
+
+}
+.logo1-item{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--secondary-text-color);
+
+}
+.logo1-item:hover,
+.logo1-item:focus{
+    fill:var(--secondary-text-color);
+    background-color: var(--accent-color);
 }
 /* portfolio */
 .services {
@@ -487,6 +694,8 @@ color: var(--secondary-text-color);
     margin-bottom: 30px;
     outline: 1px solid #eeee;
      border: var(--primary-text-color);
+   
+     
 }
 .progect-elem:nth-child(3n){
     margin-right: 0;
@@ -496,7 +705,13 @@ margin-bottom:0px;}
 .progect-item{ 
     padding: 20px  24px;}
    
+.progect-elem:hover,
+.progect-elem:focus{   background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
+
+}
 
 .progect-info{
     margin-bottom: 4px;
