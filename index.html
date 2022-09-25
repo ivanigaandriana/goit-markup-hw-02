@@ -29,6 +29,7 @@
           <use href="./imq/symbol-defs.svg#icon-mail"></use>
         </svg>
         info@devstudio.com</a></li>
+        
        
         <li class="nav-item"> <a href="tel:+380961111111" class="site-tel">
           <svg class="icon-smartphone">
@@ -44,8 +45,16 @@
           <div class="container">
           <!--Ефективні рішення для вашого бізнесу-->
           <h1 class="herou-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button"class="herou-button">Замовити послугу</button>
+          <button type="button" class="herou-button button" data-modal-open>Замовити послугу</button>
+          <!-- сірий фон -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button  type="button" class="close-modal" data-modal-close></button>
+          </div>
         </div>
+        </div>
+        
+      
         </section>
         <!--деталі-->
         
@@ -89,13 +98,31 @@
           <h2 class="section-work">Чим ми займаємося</h2>
           <ul class="work-img">
             <li class="work-title">
+              <a class="work-item" href="" class="link1">
+                <div class="work-box">
+                  <p class="overley1">
+                    ДЕКСТОПНІ ДОДАТКИ
+                  </p></div>
               <img src="./styles/imq/img.jpg" alt="what we do" width="370"/>
+              </a>
             </li>
             <li class="work-title">
+              <a class="work-item" href="" class="link1">
+                <div class="work-box">
+                  <p class="overley1">
+                    МОБІЛЬНІ ДОДАТКИ
+                  </p></div>
               <img src="./styles/imq/img (1).jpg" alt="what we do" width="370"/>
+              </a>
             </li>
             <li class="work-title">
+              <a class="work-item" href="" class="link1">
+                <div class="work-box">
+                  <p class="overley1">
+                    ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                  </p></div>
               <img src="./styles/imq/img (2).jpg" alt="what we do" width="370"/>
+              </a>
             </li>
           </ul>
         </div>
@@ -392,6 +419,6 @@
     </div>
        
       </footer>
-    
+  <script src="./js/modal.js"></script>  
 </body>
 </html>
