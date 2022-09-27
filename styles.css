@@ -312,7 +312,7 @@ color:var(--background-color-2);
 }
 .herou-button:hover,
 .herou-button:focus{
-    color:var(--header-logo-color)
+    color:var(--header-logo-color);
 }
 /* backdrop */
 .backdrop{
@@ -322,11 +322,16 @@ color:var(--background-color-2);
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
@@ -338,8 +343,29 @@ color:var(--background-color-2);
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
+    transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
    
-  
+}
+/* мод вікно заповнення */
+.form{
+
+}
+.form-body{
+
+}
+.form-title{
+
+}
+.form-item{
+
+}
+.form-label{
+
+}
+.form-input{
+    
 }
 .close-modal{
    min-width: 30px;
@@ -349,10 +375,10 @@ border: none;
 margin-top: 1%;
 margin-left: 91%;
 background-color: transparent;
-
 background-image: url(./imq/close\ \(1\).svg);
     
 }
+
 /* деталі */
 .details{
    flex-wrap: wrap;
